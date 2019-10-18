@@ -117,4 +117,21 @@ public class User implements UserDetails {
     public void setAccountNonExpired(boolean accountNonExpired) {
         this.accountNonExpired = accountNonExpired;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", realname='" + realname + '\'' +
+                ", password='" + password + '\'' +
+                ", createDate=" + createDate +
+                ", lastLoginTime='" + lastLoginTime + '\'' +
+                ", enabled=" + enabled +
+                ", accountNonExpired=" + accountNonExpired +
+                ", accountNonLocked=" + accountNonLocked +
+                ", authorities=" + authorities +
+                ", credentialsNonExpired=" + credentialsNonExpired +
+                '}';
+    }
 }
