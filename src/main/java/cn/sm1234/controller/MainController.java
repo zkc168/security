@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
-    @RequestMapping("/userlogin")
+    @RequestMapping("/login")
     public String login(){
-        return "product/login";
+        return "/product/login";
     }
 
     @RequestMapping("/error")

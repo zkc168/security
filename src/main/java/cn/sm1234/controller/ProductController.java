@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/product")
+@RequestMapping("")
 public class ProductController {
     //商品首页
     @RequestMapping("/index")
@@ -12,27 +12,27 @@ public class ProductController {
         return "index";
     }
     //商品添加
-    @RequestMapping("/add")
+    @RequestMapping("/product/add")
     public String add(){
-        return "product/productAdd";
+        return "/product/productAdd";
     }
 
     //商品修改
-    @RequestMapping("/update")
+    @RequestMapping("/product/update")
     public String update(){
-        return "product/productUpdate";
+        return "productUpdate";
     }
 
 
     //商品查询
-    @RequestMapping("/list")
+    @RequestMapping("/product/list")
     public String list(){
-        return "product/productList";
+        return "/product/productList";
     }
 
     //商品删除
-    @RequestMapping("/delete")
+    @RequestMapping("/product/delete")
     public String delete(){
-        return "product/productDelete";
+        return "/product/productDelete";
     }
 }
